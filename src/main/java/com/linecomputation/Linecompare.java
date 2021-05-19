@@ -28,6 +28,14 @@ public class Linecompare {
         Double secondLine = Math.sqrt(Math.pow((x4 - x3),2) + Math.pow((y4 - y3),2));
         System.out.println("Length of Second Line : " + secondLine);
 
-        System.out.println(firstLine.equals(secondLine));
+        int result = (firstLine.compareTo(secondLine));
+
+        if(result > 0) {
+            System.out.println("First line is greater than Second line");
+        } else if(result < 0) {
+            System.out.println("Second line is greater than First line");
+        } else {
+            System.out.println("First line is equal to Second line");
+        }
     }
 }
